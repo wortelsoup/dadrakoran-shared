@@ -30,6 +30,10 @@
       "types": "./dist/utils.d.ts"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wortelsoup/dadrakoran-shared.git"
+  },
   "dependencies": {
     "drizzle-orm": "^1.0.0-rc.5",
     "uuid": "^14.0.3"
