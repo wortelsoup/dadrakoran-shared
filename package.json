@@ -1,0 +1,41 @@
+{
+  "name": "@dadrakoran/shared",
+  "version": "1.0.0",
+  "private": false,
+  "licence": "UNLICENSED",
+  "type": "module",
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "exports": {
+    "./constants": {
+      "import": "./dist/constants.js",
+      "types": "./dist/constants.d.ts"
+    },
+    "drizzle-schema": {
+      "import": "./dist/drizzle-schema.js",
+      "types": "./dist/drizzle-schema.d.ts"
+    },
+    "./errors": {
+      "import": "./dist/errors.js",
+      "types": "./dist/errors.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils.js",
+      "types": "./dist/utils.d.ts"
+    }
+  },
+  "dependencies": {
+    "drizzle-orm": "^1.0.0-rc.5",
+    "uuid": "^14.0.3"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^1.0.0-rc.5",
+    "typescript": "^6.0.3"
+  }
+}
